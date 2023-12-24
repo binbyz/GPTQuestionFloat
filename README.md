@@ -11,7 +11,10 @@ Once you install the extension and visit chat.openai.com, a floating layer appea
 ### Instructional Video
 
 For detailed instructions on how to use the extension, please watch the video below:
-![Instructional Video](assets/GPTQuestionFloat_Usage.gif)
+
+<p align="center">
+    <img src="assets/GPTQuestionFloat_Usage.gif" alt="Instructional GIF">
+</p>
 
 ## License
 
