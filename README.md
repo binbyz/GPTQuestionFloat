@@ -11,8 +11,8 @@ Once you install the extension and visit chat.openai.com, a floating layer appea
 ### Instructional Video
 
 For detailed instructions on how to use the extension, please watch the video below:
-[![Instructional Video](assets/ChatGPTQuestionFloat.mp4 "How to Use GPTQuestionFloat")
+![Instructional Video](assets/ChatGPTQuestionFloat.mp4)
 
 ## License
 
-'GPTQuestionFloat' is distributed under the MIT license. For more details, please refer to the [LICENSE](LICENSE) file.
+'GPTQuestionFloat' is distributed under the MIT license. For more details, please refer to the [LICENSE](LICENSE.md) file.
