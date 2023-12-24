@@ -39,6 +39,7 @@ function createTocLayout(messages) {
     const relativeTag = document.querySelector('#__next > div.relative > div.relative');
     relativeTag.append(toc);
 }
+
 function scrollToMessage(messageId) {
     const targetDiv = document.querySelector(`div[data-message-author-role="user"][data-message-id="${messageId}"]`);
     if (targetDiv) {
