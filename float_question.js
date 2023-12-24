@@ -10,12 +10,10 @@ function createTocLayout(messages) {
     toc.className = 'fixed p-4 bg-white border border-gray-200 rounded shadow overflow-y-auto max-h-96'; // fixed 위치와 스크롤 가능
     toc.style.cssText = 'top: 5rem; right: 1.25rem; width: 16rem;';
     
-    // 마우스 오버 시 너비 증가
     toc.addEventListener('mouseover', function() {
         toc.style.width = '40rem'; // 너비 증가
     });
 
-    // 마우스 아웃 시 원래 너비로 복귀
     toc.addEventListener('mouseout', function() {
         toc.style.width = '16rem'; // 원래 너비로 복귀
     });
@@ -49,10 +47,6 @@ function scrollToMessage(messageId) {
 }
 
 function handleDOMChange() {
-  // 여기에 DOM 변경이 감지되었을 때 실행할 로직을 작성합니다.
-  console.log('<main> 태그 내부가 변경되었습니다.');
-
-  // 예: 새로운 메시지를 추출하는 로직
   const messageDivs = document.querySelectorAll('div[data-message-author-role="user"][data-message-id]');
   const messages = [];
 
@@ -66,7 +60,6 @@ function handleDOMChange() {
   createTocLayout(messages);
 }
 
-// MutationObserver를 사용하여 <main> 태그의 변화를 감지하는 함수
 function observeMainTagChanges() {
     const mainTag = document.querySelector('main');
 
@@ -82,5 +75,4 @@ function observeMainTagChanges() {
     observer.observe(mainTag, { childList: true, subtree: true });
 }
 
-// 스크립트가 로드될 때 <main> 태그의 변화 감지 시작
 observeMainTagChanges();
