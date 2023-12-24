@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "GPTQuestionFloat",
+    "version": "1.0",
+    "description": "In a long ChatGPT conversation list, the area where you asked a question floats for easy access.",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": ["*://chat.openai.com/*"],
+            "js": ["float_question.js"]
+        }
+    ]
+}
