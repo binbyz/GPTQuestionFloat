@@ -11,11 +11,11 @@ function createTocLayout(messages) {
     toc.style.cssText = 'top: 5rem; right: 0rem; width: 14rem; max-height: 80%; overflow-y: scroll';
     
     toc.addEventListener('mouseover', function() {
-        toc.style.width = '40rem'; // 너비 증가
+        toc.style.width = '40rem';
     });
 
     toc.addEventListener('mouseout', function() {
-        toc.style.width = '16rem'; // 원래 너비로 복귀
+        toc.style.width = '14rem'; // 원래 너비로 복귀
     });
 
     messages.forEach(({ messageId, question }) => {
