@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "GPTQuestionFloat",
     "version": "1.0",
     "description": "In a long ChatGPT conversation list, the area where you asked a question floats for easy access.",
@@ -9,5 +9,8 @@
             "matches": ["*://chat.openai.com/*"],
             "js": ["float_question.js"]
         }
+    ],
+    "host_permissions": [
+        "*://chat.openai.com/*"
     ]
 }
