@@ -8,7 +8,7 @@ function createTocLayout(messages) {
     const toc = document.createElement('ul');
     toc.id = 'chatgpt-toc';
     toc.className = 'fixed p-4 bg-white border border-gray-200 rounded shadow overflow-y-auto max-h-96'; // fixed 위치와 스크롤 가능
-    toc.style.cssText = 'top: 5rem; right: 0rem; width: 14rem; max-height: 80%; overflow-y: scroll';
+    toc.style.cssText = 'top: 5rem; right: 1rem; width: 14rem; max-height: 80%; overflow-y: scroll';
     
     toc.addEventListener('mouseover', function() {
         toc.style.width = '40rem';
