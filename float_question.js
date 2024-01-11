@@ -7,7 +7,7 @@ function createTocLayout(messages) {
 
     const toc = document.createElement('ul');
     toc.id = 'chatgpt-toc';
-    toc.className = 'fixed p-4 bg-white border border-gray-200 rounded shadow overflow-y-auto max-h-96'; // fixed 위치와 스크롤 가능
+    toc.className = 'fixed p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded shadow overflow-y-auto max-h-96';
     toc.style.cssText = 'top: 5rem; right: 1rem; width: 14rem; max-height: 80%; overflow-y: scroll';
     
     toc.addEventListener('mouseover', function() {
@@ -22,12 +22,12 @@ function createTocLayout(messages) {
         const listItem = document.createElement('li');
         listItem.className = 'flex items-center mb-2 cursor-pointer hover:text-blue-500 last:mb-0';
 
-        const icon = document.createElement('span'); // 아이콘
-        icon.className = 'inline-block h-2 w-2 mr-2 bg-blue-500 rounded-full'; // 원형 아이콘
+        const icon = document.createElement('span');
+        icon.className = 'inline-block h-2 w-2 mr-2 bg-blue-500 rounded-full';
         icon.style.cssText = 'min-width: 0.5rem; min-height: 0.5rem;';
 
         const text = document.createElement('span'); // 텍스트
-        text.className = 'text-sm truncate overflow-hidden'; // 텍스트 크기 조정, 줄임표 적용
+        text.className = 'text-sm truncate overflow-hidden dark:text-gray-50'; // 텍스트 크기 조정, 줄임표 적용
         text.textContent = question;
 
         listItem.appendChild(icon);
@@ -62,10 +62,12 @@ function handleDOMChange() {
 }
 
 function observeMainTagChanges() {
+    console.log('started');
+
     const mainTag = document.querySelector('main');
 
     if (!mainTag) {
-        console.error('main 태그를 찾을 수 없습니다.');
+        console.error('Cannot find <main> tag.');
         return;
     }
 
