@@ -1,5 +1,9 @@
 # GPTQuestionFloat
 
+## Chrome Web Store
+
+https://chromewebstore.google.com/detail/gptquestionfloat/fkejbmjllljiekongmploijfikdjfkin?hl=ko&utm_source=ext_sidebar
+
 ## Introduction
 
 'GPTQuestionFloat' is a Chrome extension designed to enhance your experience with ChatGPT by making it easier to navigate through long conversation threads. This tool quickly identifies questions you've asked in a conversation and allows you to jump directly to that part of the dialogue. It significantly improves your experience with ChatGPT by efficiently managing frequently referred questions.
